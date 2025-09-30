@@ -1,14 +1,12 @@
-# [Axiom Dotfiles]
-
-<!-- Video Demo -->
-<!-- [![Demo Video](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID) -->
+# Axiom Dotfiles
 
 <!-- Badges -->
 [![Organization Followers](https://img.shields.io/github/followers/axiom-dotfiles?style=social&label=Follow)](https://github.com/axiom-dotfiles)
 [![Stars](https://img.shields.io/github/stars/axiom-dotfiles/axiom?style=social)](https://github.com/axiom-dotfiles/axiom)
 [![Latest Commit](https://img.shields.io/github/last-commit/axiom-dotfiles/axiom)](https://github.com/axiom-dotfiles)
 
-> [Innovative and Modular Dotfiles for a Seamless Development Experience]
+<!-- Video Demo -->
+<!-- [![Demo Video](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID) -->
 
 ## Info
 
@@ -59,7 +57,7 @@ git clone https://github.com/axiom-dotfiles/hypr.git ~/.config/hypr
 
 ## Configuration
 
-[Configuration is available via `config/config.json`]
+Configuration is available via `config/config.json`
 
 ## Updating
 
