@@ -21,7 +21,7 @@
 
 #### Planned
 
-- [ ] [Onboarding + Setup Wizard]
+- [ ] Onboarding + Setup Wizard
 
 ## Structure
 
@@ -37,6 +37,7 @@ This organization contains modular repositories for different components:
 ### Dependencies
 
 TODO: Find all dependencies
+
 **Required:**
 - [Dependency 1] ([version/range])
 - [Dependency 2] ([version/range])
