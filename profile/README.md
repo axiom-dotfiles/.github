@@ -146,6 +146,3 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE)
 
 > [!Note]
 > Trying to donate? Sorry, I don't accept donations. If you want to support the project, please consider contributing code or spreading the word!
-
-> [!Note]
-> Trying to find the source of truth for the quickshell config? [forgejo](https://code.batk.me/travmonkey/quickshell)
