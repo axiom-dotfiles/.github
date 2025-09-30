@@ -41,7 +41,7 @@ This organization contains modular repositories for different components:
 <!-- - **[repo-name]**: [Component description] -->
 <!-- - **[repo-name]**: [Component description] -->
 
-## Installation
+# Installation
 
 > [!NOTE]
 > Installations are not officially supported yet, and the setup may be quite obnoxious.
@@ -49,7 +49,7 @@ This organization contains modular repositories for different components:
 > Keep in mind breaking changes to `config.json` will certainly occur until the first stable release.
 > The config schema will also not be updated until the first stable release.
 
-### Docker
+## Docker
 
 TODO: Add Docker setup and instructions.
 > [!Note]
@@ -57,7 +57,7 @@ TODO: Add Docker setup and instructions.
 > Should run daemonless (e.g. podman)
 > Currently planning to build quickshell in CI and push to GHCR
 
-### Native
+## Native
 ### Automated (not ready yet)
 
 TODO: Add installation script and AUR package
