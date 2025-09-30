@@ -26,21 +26,25 @@
 #### Planned
 
 - [ ] Onboarding + Setup Wizard
+- [ ] First stable release -> Moving from chaos in git history to merged PRs only
+- [ ] AUR Package
+- [ ] Improved Modularity, Docuemntation, and Configuration
 
 ## Structure
 
 This organization contains modular repositories for different components:
 
 - Widgets: **[axiom](https://github.com/axiom-dotfiles/axiom)**
-- Hypr: **[hypr](https://github.com/axiom-dotfiles/hypr)**
+- Hypr Config: **[hypr](https://github.com/axiom-dotfiles/hypr)**
 <!-- - **[repo-name]**: [Component description] -->
 <!-- - **[repo-name]**: [Component description] -->
 
 ## Installation
 
-    > [!NOTE]
-    > Installations are not officially supported yet, and the setup may be quite obnoxious.
-    > Please be patient as development is ongoing.
+> [!NOTE]
+> Installations are not officially supported yet, and the setup may be quite obnoxious.
+> Please be patient as development is ongoing. You likely can get it working with some effort though :)
+> Keep in mind breaking changes to `config.json` will certainly occur until the first stable release.
 
 ### Dependencies
 
