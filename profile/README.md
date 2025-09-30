@@ -107,10 +107,15 @@ TODO: Add common issues and solutions here.
 
 ## Contributing
 
-Note: Contributions are not ready yet, and pull requests will be closed. Feel free to open issues though!
+> [!Note]
+> Contributions are not ready yet, and pull requests will be closed. Feel free to open issues though!
+
+> [!Note]
+> If you really want to help contribute before the first stable release (totally appreciated), please reach out to me on Matrix (@travmonkey:matrix.org)
+> and we can discuss collaboration options, as I will have to get you integrated into my personal infrastructure and git.
 
 For when contributions are ready:
-Contributions are welcome! Please feel free to submit a Pull Request to any of the repositories in this organization. (see above, not ready yet)
+Contributions are welcome! Please feel free to submit a Pull Request to any of the repositories in this organization. (see above, not ready yet, PR's on github will be closed)
 
 1. Fork the relevant repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
