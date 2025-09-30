@@ -133,7 +133,8 @@ MIT
 
 ## Support
 
-- **Contact**: t.coding@batk.me
+- **Contact**: @travmonkey:matrix.org
+- **Space**: @axiom-dotfiles:matrix.org (not ready yet)
 
 ---
 
