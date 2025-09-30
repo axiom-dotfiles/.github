@@ -131,7 +131,7 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE)
 
 - [hyprland](https://hypr.land/)
 - [quickshell](https://quickshell.org/)
-- [End-4](https://github.com/end-4/dots-hyprland)
+- [illogical-impulse](https://github.com/end-4/dots-hyprland)
 - [caelestia-dots](https://github.com/caelestia-dots)
 - [JaKooLit](https://github.com/JaKooLit/Hyprland-Dots)
 
