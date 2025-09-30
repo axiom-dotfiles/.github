@@ -143,3 +143,6 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE)
 ---
 
 ⭐ If you find this useful, please consider starring the repositories!
+
+> [!Note]
+> Trying to donate? Sorry, I don't accept donations. If you want to support the project, please consider contributing code or spreading the word!
