@@ -56,9 +56,9 @@ This organization contains modular repositories for different components:
 TODO: Add Docker setup and instructions.
 > [!Note]
 > Docker setup is not ready yet.
-> Should run daemonless (e.g. podman)
-> Currently planning to build quickshell in CI and push to GHCR
-> From there, a swww daemon with a bind mount and all the socket connections *should* be able to run all the dotfiles with docker compose
+> Should run daemonless (e.g. podman).
+> Currently planning to build quickshell in CI and push to GHCR.
+> From there, a swww daemon with a bind mount and all the socket connections *should* be able to run all the dotfiles with docker compose.
 > May want assistance hardening the image for public use.
 
 ## Native
