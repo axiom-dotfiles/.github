@@ -49,9 +49,7 @@ This organization contains modular repositories for different components:
 > Keep in mind breaking changes to `config.json` will certainly occur until the first stable release.
 > The config schema will also not be updated until the first stable release.
 
-### Quick Start
-
-#### Docker
+### Docker
 
 TODO: Add Docker setup and instructions.
 > [!Note]
@@ -59,14 +57,14 @@ TODO: Add Docker setup and instructions.
 > Should run daemonless (e.g. podman)
 > Currently planning to build quickshell in CI and push to GHCR
 
-#### Native
-##### Automated (not ready yet)
+### Native
+#### Automated (not ready yet)
 
 TODO: Add installation script and AUR package
 
-##### Manual
+#### Manual
 
-###### Dependencies
+##### Dependencies
 
 TODO: Find all dependencies
 
