@@ -1,9 +1,13 @@
 # Axiom Dotfiles
 
 <!-- Badges -->
-[![Organization Followers](https://img.shields.io/github/followers/axiom-dotfiles?style=social&label=Follow)](https://github.com/axiom-dotfiles)
-[![Stars](https://img.shields.io/github/stars/axiom-dotfiles/axiom?style=social)](https://github.com/axiom-dotfiles/axiom)
-[![Latest Commit](https://img.shields.io/github/last-commit/axiom-dotfiles/axiom)](https://github.com/axiom-dotfiles)
+<div align="center">
+
+[![Organization Followers](https://img.shields.io/github/followers/axiom-dotfiles?style=for-the-badge&logoColor=ebdbb2&labelColor=282828&label=Follow&color=458588)](https://github.com/axiom-dotfiles)
+[![Stars](https://img.shields.io/github/stars/axiom-dotfiles/axiom?style=for-the-badge&logoColor=ebdbb2&labelColor=282828&color=d79921)](https://github.com/axiom-dotfiles/axiom)
+[![Latest Commit](https://img.shields.io/github/last-commit/axiom-dotfiles/axiom?style=for-the-badge&logoColor=ebdbb2&labelColor=282828&color=98971a)](https://github.com/axiom-dotfiles)
+
+</div>
 
 <!-- Video Demo -->
 <!-- [![Demo Video](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID) -->
