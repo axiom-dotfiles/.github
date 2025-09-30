@@ -26,6 +26,7 @@
 #### Planned
 
 - [ ] Onboarding + Setup Wizard
+- [ ] Clipboard manager
 - [ ] Dice roller???
 - [ ] First stable release -> Moving from chaos in git history to merged PRs only
 - [ ] AUR Package
