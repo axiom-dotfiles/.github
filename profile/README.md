@@ -58,13 +58,13 @@ TODO: Add Docker setup and instructions.
 > Currently planning to build quickshell in CI and push to GHCR
 
 ### Native
-#### Automated (not ready yet)
+### Automated (not ready yet)
 
 TODO: Add installation script and AUR package
 
-#### Manual
+### Manual
 
-##### Dependencies
+#### Dependencies
 
 TODO: Find all dependencies
 
