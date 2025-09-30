@@ -84,6 +84,7 @@ git clone https://github.com/axiom-dotfiles/hypr.git ~/.config/hypr
 ## Configuration
 
 Configuration is available via `config/config.json`
+Please note that until the first release, all options are considered a suggestion, and may not actually do anything yet
 
 ## Updating
 
