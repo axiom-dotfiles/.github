@@ -14,7 +14,7 @@
 
 ## Info
 
-[Axiom Dotfiles](https://github.com/axiom-dotfiles) is a collection of modular and customizable dotfiles designed to streamline your development environment setup. This organization hosts various repositories that cater to different aspects of a developer's workflow, ensuring flexibility and ease of use.
+[Axiom Dotfiles](https://github.com/axiom-dotfiles) is my personal collection of dotfiles and configurations for Hyprland and related tools, designed to create a cohesive, feature-packed, and visually appealing desktop environment.
 
 ### Features
 
