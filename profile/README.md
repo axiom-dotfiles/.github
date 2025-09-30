@@ -1,4 +1,4 @@
-# Axiom Dotfiles
+# <div align="center">Axiom Dotfiles</div>
 
 <!-- Badges -->
 <div align="center">
@@ -36,7 +36,11 @@ This organization contains modular repositories for different components:
 <!-- - **[repo-name]**: [Component description] -->
 <!-- - **[repo-name]**: [Component description] -->
 
-## Install
+## Installation
+
+    > [!NOTE]
+    > Installations are not officially supported yet, and the setup may be quite obnoxious.
+    > Please be patient as development is ongoing.
 
 ### Dependencies
 
