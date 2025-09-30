@@ -31,6 +31,8 @@
 - [ ] First stable release -> Moving from chaos in git history to merged PRs only
 - [ ] AUR Package
 - [ ] Improved Modularity, Docuemntation, and Configuration
+- [ ] Limitless Widgets
+- [ ] Optimizations + Refactoring + Performance Improvements
 
 ## Structure
 
