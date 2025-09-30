@@ -26,6 +26,7 @@
 #### Planned
 
 - [ ] Onboarding + Setup Wizard
+- [ ] Dice roller???
 - [ ] First stable release -> Moving from chaos in git history to merged PRs only
 - [ ] AUR Package
 - [ ] Improved Modularity, Docuemntation, and Configuration
@@ -45,24 +46,37 @@ This organization contains modular repositories for different components:
 > Installations are not officially supported yet, and the setup may be quite obnoxious.
 > Please be patient as development is ongoing. You likely can get it working with some effort though :)
 > Keep in mind breaking changes to `config.json` will certainly occur until the first stable release.
+> The config schema will also not be updated until the first stable release.
 
 ### Dependencies
 
 TODO: Find all dependencies
 
 **Required:**
-- [Dependency 1] ([version/range])
-- [Dependency 2] ([version/range])
-- [Dependency 3] ([version/range])
+- Dependency 1 ([version/range])
 
 **Optional:**
-- [Optional dependency 1]: [Purpose]
-- [Optional dependency 2]: [Purpose]
+- Optional Dependency 1: ([version/range])([purpose])
 
 ### Quick Start
 
+#### Docker
+
+TODO: Add Docker setup and instructions.
+> [!Note]
+> Docker setup is not ready yet.
+> Should run daemonless (e.g. podman)
+> Currently planning to build quickshell in CI and push to GHCR
+
+#### Native
+
+##### Automated (not ready yet)
+
+TODO: Add installation script and AUR package
+
+##### Manual
 ```bash
-# Good luck. This is not ready for public use yet :)
+# Good luck. This is not really ready for public use yet :)
 git clone https://github.com/axiom-dotfiles/axiom.git ~/.config/quickshell/axiom
 git clone https://github.com/axiom-dotfiles/hypr.git ~/.config/hypr
 # ... debug
@@ -75,7 +89,7 @@ Configuration is available via `config/config.json`
 ## Updating
 
 ```bash
-# No managed installation available yet
+# No managed installation available yet :(
 cd ~/.config/quickshell/axiom
 git pull origin main
 cd ~/.config/hypr
@@ -96,7 +110,8 @@ TODO: Add common issues and solutions here.
 
 Note: Contributions are not ready yet, and pull requests will be closed. Feel free to open issues though!
 
-Contributions are welcome! Please feel free to submit a Pull Request to any of the repositories in this organization. (see above)
+For when contributions are ready:
+Contributions are welcome! Please feel free to submit a Pull Request to any of the repositories in this organization. (see above, not ready yet)
 
 1. Fork the relevant repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
