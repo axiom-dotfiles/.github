@@ -150,4 +150,10 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE)
 ⭐ If you find this useful, please consider starring the repositories!
 
 > [!Note]
+> Interested in the keyboard? Check out my keyboard project: [travyboard](https://code.batk.me/travmonkey/travyboard)
+
+> [!Note]
+> Interested in kuberentes? Check out: [Klusteroth](https://code.batk.me/Kubernetes) and my robust [template-application](https://code.batk.me/Kubernetes/template-application)
+
+> [!Note]
 > Trying to donate? Sorry, I don't accept donations. If you want to support the project, please consider contributing code or spreading the word!
