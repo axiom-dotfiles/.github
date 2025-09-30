@@ -112,7 +112,7 @@ TODO: Add common issues and solutions here.
 
 > [!Note]
 > If you really want to help contribute before the first stable release (totally appreciated), please reach out to me on Matrix (@travmonkey:matrix.org)
-> and we can discuss collaboration options, as I will have to get you integrated into my personal infrastructure and git.
+> and we can discuss collaboration options and methods.
 
 For when contributions are ready:
 Contributions are welcome! Please feel free to submit a Pull Request to any of the repositories in this organization. (see above, not ready yet, PR's on github will be closed)
@@ -138,7 +138,7 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE)
 ## Support
 
 - **Contact**: @travmonkey:matrix.org
-- **Space**: @axiom-dotfiles:matrix.org (not ready yet)
+- **Space**: @axiom-dotfiles:matrix.org (not ready yet) (potentially looking for moderators)
 
 ---
 
@@ -146,3 +146,6 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE)
 
 > [!Note]
 > Trying to donate? Sorry, I don't accept donations. If you want to support the project, please consider contributing code or spreading the word!
+
+> [!Note]
+> Trying to find the source of truth for quickshell? [quickshell](https://code.batk.me/travmonkey/quickshell)
