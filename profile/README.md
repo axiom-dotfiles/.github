@@ -30,9 +30,7 @@
 - [ ] Dice roller???
 - [ ] First stable release -> Moving from chaos in git history to merged PRs only
 - [ ] AUR Package
-- [ ] Improved Modularity, Docuemntation, and Configuration
 - [ ] Limitless Widgets
-- [ ] Optimizations + Refactoring + Performance Improvements
 
 #### Roadmap to v1.0
 
@@ -43,8 +41,9 @@
 - [ ] Housekeeping + Documentation
 - [ ] Collaboration + pipeline setup
 - [ ] Installation script + management
-- [ ] Docker support (stretch goal for first stable release)
 - [ ] AUR package (stretch goal for first stable release)
+- [ ] Docker support (stretch goal for first stable release)
+- [ ] Widget templating (stretch goal for first stable release)
 - [ ] First stable release | DUE DATE: 2025-12-10 (Major personal life changes at this date)
 
 ## Structure
