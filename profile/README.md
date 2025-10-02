@@ -37,6 +37,7 @@
 #### Roadmap to v1.0
 
 - [x] Implement all planned features
+- [ ] Create and release teaser video
 - [ ] Bug fix + refactor messy code
 - [ ] Implement/utilize/fix comprehensive configuration options
 - [ ] Housekeeping + Documentation
