@@ -44,7 +44,7 @@
 - [ ] Installation script + management
 - [ ] Docker support (stretch goal for first stable release)
 - [ ] AUR package (stretch goal for first stable release)
-- [ ] First stable release | DUE DATE: 2025-12-15
+- [ ] First stable release | DUE DATE: 2025-12-10 (Major personal life changes at this date)
 
 ## Structure
 
