@@ -38,7 +38,7 @@
 
 - [x] Implement all planned features
 - [ ] Create and release teaser video
-- [ ] Bug fix + refactor messy code
+- [ ] Bug fix + refactor messy code + optimizations
 - [ ] Implement/utilize/fix comprehensive configuration options
 - [ ] Housekeeping + Documentation
 - [ ] Collaboration + pipeline setup
