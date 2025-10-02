@@ -38,7 +38,7 @@
 
 - [x] Implement all planned features
 - [ ] Bug fix + refactor messy code
-- [ ] Implement comprehensive configuration options
+- [ ] Implement/utilize/fix comprehensive configuration options
 - [ ] Housekeeping + Documentation
 - [ ] Collaboration + pipeline setup
 - [ ] Installation script + management
