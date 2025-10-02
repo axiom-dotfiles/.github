@@ -62,7 +62,7 @@ This organization contains modular repositories for different components:
 > Installations are not officially supported yet, and the setup may be quite obnoxious.
 > Please be patient as development is ongoing. You likely can get it working with some effort though :)
 > Keep in mind breaking changes to `config.json` will certainly occur until the first stable release.
-> The config schema will also not be updated until the first stable release.
+> The config schema also may or may not be updated until the first stable release.
 
 ## Docker
 
