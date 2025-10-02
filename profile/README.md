@@ -34,6 +34,18 @@
 - [ ] Limitless Widgets
 - [ ] Optimizations + Refactoring + Performance Improvements
 
+#### Roadmap to v1.0
+
+- [x] Implement all planned features
+- [ ] Bug fix + refactor messy code
+- [ ] Implement comprehensive configuration options
+- [ ] Housekeeping + Documentation
+- [ ] Collaboration + pipeline setup
+- [ ] Installation script + management
+- [ ] Docker support (stretch goal for first stable release)
+- [ ] AUR package (stretch goal for first stable release)
+- [ ] First stable release | DUE DATE: 2025-12-15
+
 ## Structure
 
 This organization contains modular repositories for different components:
