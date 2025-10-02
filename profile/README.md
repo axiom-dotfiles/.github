@@ -37,7 +37,7 @@
 - [x] Implement all planned features
 - [ ] Create and release teaser video
 - [ ] Bug fix + refactor messy code + optimizations
-- [ ] Implement/utilize/fix comprehensive configuration options
+- [ ] Implement/utilize/fix comprehensive configuration options --> (potentially move to PR's only here)
 - [ ] Housekeeping + Documentation
 - [ ] Collaboration + pipeline setup
 - [ ] Installation script + management
