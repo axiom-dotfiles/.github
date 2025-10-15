@@ -105,16 +105,24 @@ Please note that until the first release, all options are considered a suggestio
 
 ```bash
 # No managed installation available yet :(
-cd ~/.config/quickshell/axiom
+# If you have made changes to the source code, I would reccomend using this workflow to safely update
+# You can also create and delete a branch
+# make a random commit to save your changes
+# You shouldn't need to back up your user folder, but you can if you want to be safe
+git commit -am "temp commit"
+# now that we have our safety commit, we can reset main to pull
+git reset --hard origin/main
 git pull origin main
-cd ~/.config/hypr
-git pull origin main
+git cherry-pick --no-commit HEAD@{1}
+# resolve any conflicts - lazygit is my preferred tool for merge confilcts
 ```
 
 ## Uninstalling
 
 ```bash
 # Remove configuration directories
+rm -rf ~/.config/quickshell/axiom
+rm -rf ~/.config/hypr
 ```
 
 ## Troubleshooting
