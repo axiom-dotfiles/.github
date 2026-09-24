@@ -5,174 +5,154 @@
 
 [![Organization Followers](https://img.shields.io/github/followers/axiom-dotfiles?style=for-the-badge&logoColor=ebdbb2&labelColor=282828&label=Follow&color=458588)](https://github.com/axiom-dotfiles)
 [![Stars](https://img.shields.io/github/stars/axiom-dotfiles/axiom?style=for-the-badge&logoColor=ebdbb2&labelColor=282828&color=d79921)](https://github.com/axiom-dotfiles/axiom)
-[![Latest Commit](https://img.shields.io/github/last-commit/axiom-dotfiles/axiom?style=for-the-badge&logoColor=ebdbb2&labelColor=282828&color=98971a)](https://github.com/axiom-dotfiles)
+[![Latest Commit](https://img.shields.io/github/last-commit/axiom-dotfiles/axiom?style=for-the-badge&logoColor=ebdbb2&labelColor=282828&color=98971a)](https://github.com/axiom-dotfiles/axiom)
 
 </div>
 
 https://github.com/user-attachments/assets/a53f62e0-e2bc-4834-a05f-92b6cb115c35
 
-## Info
+A complete, themeable Hyprland desktop, built on [Quickshell](https://quickshell.org). It covers the bar, the overlay, notifications, the lockscreen, the launcher and the power menu. You configure it from inside the shell, and it takes its colors from your wallpaper.
 
-[Axiom Dotfiles](https://github.com/axiom-dotfiles) is my personal collection of dotfiles and configurations for Hyprland and related tools, designed to create a cohesive, feature-packed, and visually appealing desktop environment.
+## Highlights
 
-### Features
+- **Configured from the desktop.** The settings page is generated from the config schema. The bar and the overlay each have a live editor, and every change hot-reloads with no restart. A broken config never replaces the running one.
+- **Bars your way.** Any number of bars, on any monitor and any edge: solid, transparent, or floating pills that merge into the screen border. 21 widget types, with popouts that grow out of the bar.
+- **The overlay.** Full-screen pages of cards that you lay out yourself, from 23 modules: media, mixer, system graphs, processes, weather, calendar, notes, quick toggles, AI chat and more. Each module adapts to the shape of its slot.
+- **Grid-based workspaces.** A 5×5 workspace grid on each monitor, with a bar widget, a workspace map and a workspace overlay to move around it.
+- **Colors from your wallpaper.** pywal backends pick the candidate colors, then the palette is built in OKLCH to match the contrast of the hand-made themes. There are dark/light pairs of Catppuccin, Gruvbox, Solarized and Tokyo Night, plus Submarine Sonar.
+- **One theme everywhere.** kitty, cava, k9s, Neovim and hyprlock follow the active theme.
+- **Per-app OSD.** The volume OSD follows the apps you choose, not only the master volume.
+- **AI chat.** Gemini, OpenAI, Anthropic or offline, in an overlay card. API keys are kept out of the config.
+- **Your choice of lockscreen.** The built-in Wayland session lock (PAM), a themed hyprlock config that axiom generates, or bring your own.
+- **Multi-monitor and translated.** Per-monitor wallpapers and bars. English and Japanese, with more added as a single JSON file each.
 
-- **Grid-Based Workspaces**: Completely new way to manage workspaces using a grid system
-- **Color Generation**: Generate color schemes based on your wallpaper
-- **Pinnable AI Chat**: Pinnable Menu panel with built-in AI chat functionality
-- **Application Based OSD**: Set multiple applications for the OSD
+## Repositories
 
-#### Planned
+| Repository | What it is | Installs to |
+| --- | --- | --- |
+| **[axiom](https://github.com/axiom-dotfiles/axiom)** | The Quickshell desktop shell: bar, overlay, notifications, lockscreen, launcher, OSD | `~/.config/quickshell/axiom` |
+| **[hypr](https://github.com/axiom-dotfiles/hypr)** | The Hyprland config, with keybinds for axiom and a hypridle setup | `~/.config/hypr` |
+| **[install](https://github.com/axiom-dotfiles/install)** | Installation pieces, currently a greetd + ReGreet login setup | `/etc/greetd` |
 
-- [ ] Onboarding + Setup Wizard
-- [ ] Clipboard manager
-- [ ] Dice roller???
-- [ ] First stable release -> Moving from chaos in git history to merged PRs only
-- [ ] AUR Package
-- [ ] Limitless Widgets
+See the [axiom README](https://github.com/axiom-dotfiles/axiom#readme) for the full list of features and the configuration reference.
 
-#### Roadmap to v1.0
-
-- [x] Implement all planned features
-- [ ] Create and release teaser video
-- [ ] Bug fix + refactor messy code + optimizations
-- [ ] Implement/utilize/fix comprehensive configuration options --> (potentially move to PR's only here)
-- [ ] Housekeeping + Documentation
-- [ ] Collaboration + pipeline setup
-- [ ] Installation script + management
-- [ ] AUR package (stretch goal for first stable release)
-- [ ] Docker support (stretch goal for first stable release)
-- [ ] Widget templating (stretch goal for first stable release)
-- [ ] First stable release | DUE DATE: 2025-12-10 (Major personal life changes at this date)
-
-## Structure
-
-This organization contains modular repositories for different components:
-
-- Widgets: **[axiom](https://github.com/axiom-dotfiles/axiom)**
-- Hypr Config: **[hypr](https://github.com/axiom-dotfiles/hypr)**
-<!-- - **[repo-name]**: [Component description] -->
-<!-- - **[repo-name]**: [Component description] -->
-
-# Installation
+## Installation
 
 > [!NOTE]
-> Installations are not officially supported yet, and the setup may be quite obnoxious.
-> Please be patient as development is ongoing. You likely can get it working with some effort though :)
-> Keep in mind breaking changes to `config.json` will certainly occur until the first stable release.
-> The config schema also may or may not be updated until the first stable release.
+> There's no official installer yet, so setup is manual. Expect some rough edges.
+> Until the first stable release, `config.json` may still change between versions. Old configs are migrated automatically.
 
-## Docker
+### Dependencies
 
-TODO: Add Docker setup and instructions.
-> [!Note]
-> Docker setup is not ready yet.
-> Should run daemonless (e.g. podman).
-> Currently planning to build quickshell in CI and push to GHCR.
-> From there, a swww daemon with a bind mount and all the socket connections *should* be able to run all the dotfiles with docker compose.
-> May want assistance hardening the image for public use.
+**Required:** Hyprland, [Quickshell](https://quickshell.org) 0.3.1 or newer, a Nerd Font (`Symbols Nerd Font`), `jq`, `python3`.
 
-## Native
-### Automated (not ready yet)
-
-TODO: Add installation script and AUR package
+**Optional:**
+- `awww`: wallpapers
+- ImageMagick: theme generation
+- NetworkManager: network widget
+- `pacman-contrib`, plus `paru` or `yay`: update checks
+- `tailscale`
+- `grim`, `slurp`, `wl-copy`: screenshots
+- `hyprlock` and `hypridle`
+- `kitty`, `cava`, `k9s`, `nvim`: theme integrations
 
 ### Manual
 
-#### Dependencies
-
-TODO: Find all dependencies
-
-**Required:**
-- Dependency 1 ([version/range])
-
-**Optional:**
-- Optional Dependency 1: ([version/range])([purpose])
-
 ```bash
-# Good luck. This is not really ready for public use yet :)
 git clone https://github.com/axiom-dotfiles/axiom.git ~/.config/quickshell/axiom
 git clone https://github.com/axiom-dotfiles/hypr.git ~/.config/hypr
-# ... debug
 ```
 
-## Configuration
+The hypr config starts the shell for you. If you use your own Hyprland config instead, add:
 
-Configuration is available via `config/config.json`
-Please note that until the first release, all options are considered a suggestion, and may not actually do anything yet
+```ini
+exec-once = QML_XHR_ALLOW_FILE_READ=1 qs -c axiom
+bind = SUPER, TAB, exec, qs -c axiom ipc call overlay toggle
+```
+
+Then open the overlay and set things up from the **Settings**, **Themes**, **Bar editor** and **Overlay editor** pages.
+
+### Automated
+
+An install script and an AUR package are planned.
 
 ## Updating
 
+There's no managed update yet. If you haven't changed the source, `git pull` in each repository is enough. Your settings live in `config/user/config.json`, which git ignores.
+
+If you have local changes, save them first:
+
 ```bash
-# No managed installation available yet :(
-# If you have made changes to the source code, I would reccomend using this workflow to safely update
-# You can also create and delete a branch
-# make a random commit to save your changes
-# You shouldn't need to back up your user folder, but you can if you want to be safe
-git commit -am "temp commit"
-# now that we have our safety commit, we can reset main to pull
-git reset --hard origin/main
-git pull origin main
-git cherry-pick --no-commit HEAD@{1}
-# resolve any conflicts - lazygit is my preferred tool for merge confilcts
+git commit -am "local changes"
+git pull --rebase origin main
+# resolve any conflicts (lazygit makes this painless)
 ```
 
 ## Uninstalling
 
 ```bash
-# Remove configuration directories
-rm -rf ~/.config/quickshell/axiom
-rm -rf ~/.config/hypr
+rm -rf ~/.config/quickshell/axiom ~/.config/hypr
+rm -rf ~/.local/state/axiom   # generated hyprlock config and chat API keys
 ```
 
 ## Troubleshooting
 
-TODO: Add common issues and solutions here.
+- **Nothing shows up:** run `~/.config/quickshell/axiom/scripts/log.sh` to see the shell's warnings and errors.
+- **Settings won't save:** `config.json` is invalid. The log names the problem. Fix the file, or restore a saved config.
+- **Missing icons:** install a Nerd Font that provides `Symbols Nerd Font`.
+
+Found a bug? [Open an issue](https://github.com/axiom-dotfiles/axiom/issues).
+
+## Roadmap to v1.0
+
+- [x] All planned core features
+- [x] Big cleanup: config safety, secrets, per-monitor surfaces, unified content and polling
+- [ ] Onboarding and a setup wizard
+- [ ] Clipboard manager
+- [ ] Install script and management
+- [ ] Collaboration: CI, issue and PR templates, PR-only changes after the first release
 
 ## Contributing
 
-> [!Note]
-> Contributions are not ready yet, and pull requests will be closed. Feel free to open issues though!
+> [!NOTE]
+> Pull requests aren't open yet, and PRs on GitHub will be closed. Issues are very welcome.
+> If you want to help before the first stable release (much appreciated), get in touch on Matrix and we can work out how.
 
-> [!Note]
-> If you really want to help contribute before the first stable release (totally appreciated), please reach out to me on Matrix (@travmonkey:matrix.org)
-> and we can discuss collaboration options and methods.
-
-For when contributions are ready:
-Contributions are welcome! Please feel free to submit a Pull Request to any of the repositories in this organization. (see above, not ready yet, PR's on github will be closed)
+Once contributions open:
 
 1. Fork the relevant repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes
+4. Push the branch and open a pull request
+
+Each repository's `CONTRIBUTING.md` covers its layout and conventions.
 
 ## License
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE)
+MIT. See [LICENSE](LICENSE).
 
-## Acknowledgments / Inspirations / References
+## Acknowledgments
 
-- [hyprland](https://hypr.land/)
-- [quickshell](https://quickshell.org/)
+- [Hyprland](https://hypr.land/)
+- [Quickshell](https://quickshell.org/)
 - [illogical-impulse](https://github.com/end-4/dots-hyprland)
 - [caelestia-dots](https://github.com/caelestia-dots)
 - [JaKooLit](https://github.com/JaKooLit/Hyprland-Dots)
 
 ## Support
 
-- **Contact**: @travmonkey:matrix.org
-- **Space**: @axiom-dotfiles:matrix.org (not ready yet) (potentially looking for moderators)
+- **Contact**: @travmonkey:matrix.batk.me
+- **Space**: @axiom-dotfiles:matrix.batk.me (not ready yet; moderators wanted)
 
 ---
 
 ⭐ If you find this useful, please consider starring the repositories!
 
-> [!Note]
+> [!NOTE]
 > Interested in the keyboard? Check out my keyboard project: [travyboard](https://github.com/travishepworth/travyboard-mirror)
 
-> [!Note]
-> Interested in kubernetes? Check out: [Klusteroth](https://code.batk.me/Kubernetes) and my robust [template-application](https://code.batk.me/Kubernetes/template-application)
+> [!NOTE]
+> Interested in Kubernetes? Check out [Klusteroth](https://code.batk.me/Kubernetes) and my [template-application](https://code.batk.me/Kubernetes/template-application).
 
-> [!Note]
-> Trying to donate? Sorry, I don't accept donations. If you want to support the project, please consider contributing code or spreading the word!
+> [!NOTE]
+> I don't accept donations. If you want to support the project, contribute code or spread the word!
