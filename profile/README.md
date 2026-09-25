@@ -11,13 +11,14 @@ It needs only `qs`, `python3` and `jq`.
 
 [![Organization Followers](https://img.shields.io/github/followers/axiom-dotfiles?style=for-the-badge&logoColor=ebdbb2&labelColor=282828&label=Follow&color=458588)](https://github.com/axiom-dotfiles)
 [![Stars](https://img.shields.io/github/stars/axiom-dotfiles/axiom?style=for-the-badge&logoColor=ebdbb2&labelColor=282828&color=d79921)](https://github.com/axiom-dotfiles/axiom)
+[![Release](https://img.shields.io/github/v/tag/axiom-dotfiles/axiom?filter=v*&style=for-the-badge&logoColor=ebdbb2&labelColor=282828&label=Release&color=b8bb26)](https://github.com/axiom-dotfiles/axiom/tags)
 [![Latest Commit](https://img.shields.io/github/last-commit/axiom-dotfiles/axiom?style=for-the-badge&logoColor=ebdbb2&labelColor=282828&color=98971a)](https://github.com/axiom-dotfiles/axiom)
 <br>
 [![Hyprland](https://img.shields.io/badge/Hyprland-0.55%2B-458588?style=for-the-badge&labelColor=282828)](https://hypr.land)
 [![Quickshell](https://img.shields.io/badge/Quickshell-0.3.1%2B-b16286?style=for-the-badge&labelColor=282828)](https://quickshell.org)
 [![License](https://img.shields.io/badge/License-MIT-689d6a?style=for-the-badge&labelColor=282828)](LICENSE)
 
-[Features](#-why-axiom) · [Quick start](#-quick-start) · [Repositories](#-repositories) · [Roadmap](#%EF%B8%8F-roadmap-to-v10)
+[Features](#-why-axiom) · [Quick start](#-quick-start) · [Roadmap](#%EF%B8%8F-roadmap)
 
 </div>
 
@@ -163,10 +164,11 @@ Wallpapers and bars are set per monitor. Surfaces open on the primary monitor, t
 ## 🚀 Quick start
 
 > [!NOTE]
-> There's no official installer yet, so setup is manual. Expect some rough edges.
-> Until the first stable release, `config.json` may still change between versions. Old configs are migrated automatically.
+> **axiom 1.0 is out**, the first stable release. Configs from earlier versions are migrated automatically.
 
 ### Requirements: that's it
+
+The installer below sets these up for you on Arch.
 
 | | |
 | --- | --- |
@@ -192,12 +194,21 @@ Wallpapers and bars are set per monitor. Surfaces open on the primary monitor, t
 
 ### Install
 
+On Arch Linux:
+
 ```bash
-git clone https://github.com/axiom-dotfiles/axiom.git ~/.config/quickshell/axiom
-git clone https://github.com/axiom-dotfiles/hypr.git ~/.config/hypr   # optional: a matching Hyprland config
+curl -fsSL https://raw.githubusercontent.com/axiom-dotfiles/axiom/main/install.sh | bash
 ```
 
-The hypr config starts the shell for you. With your own Hyprland config, this is the only line it needs:
+It installs everything from the official repositories. It asks about each optional extra, clones the latest release, and asks before adding the line that starts axiom to your `hyprland.lua`.
+
+By hand, or on another distribution: install the requirements, then
+
+```bash
+git clone https://github.com/axiom-dotfiles/axiom.git ~/.config/quickshell/axiom
+```
+
+and add the one line your Hyprland config (`hyprland.lua`) needs:
 
 ```lua
 hl.on("hyprland.start", function() hl.exec_cmd("qs -c axiom") end)
@@ -211,7 +222,7 @@ Then press <kbd>Super</kbd> + <kbd>Tab</kbd> to open the overlay, and set everyt
 <details>
 <summary><b>Updating</b></summary>
 
-axiom updates itself from its release tags. By default it notifies you when a release is out, and the notification opens **Settings → Updates**, where one click installs it. That page can also switch to updating automatically, or turn checks off. The other repositories update with `git pull`. Your settings live in `config/user/config.json`, which git ignores.
+axiom updates itself from its release tags. By default it notifies you when a release is out, and the notification opens **Settings → Updates**, where one click installs it. That page can also switch to updating automatically, or turn checks off. Your settings live in `config/user/config.json`, which git ignores.
 
 axiom won't update a clone with local changes. Update one by hand, saving the changes first:
 
@@ -227,9 +238,11 @@ git pull --rebase origin main
 <summary><b>Uninstalling</b></summary>
 
 ```bash
-rm -rf ~/.config/quickshell/axiom ~/.config/hypr
+rm -rf ~/.config/quickshell/axiom
 rm -rf ~/.local/state/axiom   # generated hyprlock config and chat API keys
 ```
+
+Then remove the `qs -c axiom` line (marked `-- axiom`) from your `hyprland.lua`. If you'd switched axiom to managing `hyprland.lua`, your original is in `~/.config/hypr/user/00-previous.lua`.
 
 </details>
 
@@ -244,39 +257,32 @@ Found a bug? [Open an issue](https://github.com/axiom-dotfiles/axiom/issues).
 
 </details>
 
-## 📚 Repositories
-
-| Repository | What it is | Installs to |
-| --- | --- | --- |
-| **[axiom](https://github.com/axiom-dotfiles/axiom)** | The Quickshell desktop shell: bar, overlay, notifications, lockscreen, launcher, OSD | `~/.config/quickshell/axiom` |
-| **[hypr](https://github.com/axiom-dotfiles/hypr)** | The Hyprland config, with keybinds for axiom and a hypridle setup | `~/.config/hypr` |
-| **[install](https://github.com/axiom-dotfiles/install)** | Installation pieces, currently a greetd + ReGreet login setup | `/etc/greetd` |
-
 See the [axiom README](https://github.com/axiom-dotfiles/axiom#readme) for the full feature list and the configuration reference.
 
-## 🗺️ Roadmap to v1.0
+## 🗺️ Roadmap
 
 - [x] All planned core features
 - [x] Big cleanup: config safety, secrets, per-monitor surfaces, unified content and polling
+- [x] Install script
+- [x] v1.0, the first stable release
 - [ ] Onboarding and a setup wizard
 - [ ] Clipboard manager
-- [ ] Install script and management
-- [ ] Collaboration: CI, issue and PR templates, PR-only changes after the first release
+- [ ] Collaboration: CI, issue and PR templates, PR-only changes
 
 ## 🤝 Contributing
 
 > [!NOTE]
 > Pull requests aren't open yet, and PRs on GitHub will be closed. Issues are very welcome.
-> If you want to help before the first stable release (much appreciated), get in touch on Matrix and we can work out how.
+> If you want to help (much appreciated), get in touch on Matrix and we can work out how.
 
 Once contributions open:
 
-1. Fork the relevant repository
+1. Fork [axiom](https://github.com/axiom-dotfiles/axiom)
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
 3. Commit your changes
 4. Push the branch and open a pull request
 
-Each repository's `CONTRIBUTING.md` covers its layout and conventions.
+axiom's `CONTRIBUTING.md` covers its layout and conventions.
 
 ## 💬 Support
 
