@@ -293,11 +293,6 @@ Once contributions open:
 
 axiom's `CONTRIBUTING.md` covers its layout and conventions.
 
-## 💬 Support
-
-- **Contact:** @travmonkey:matrix.batk.me
-- **Space:** @axiom-dotfiles:matrix.batk.me (not ready yet; moderators wanted)
-
 ## 🙏 Acknowledgments
 
 [Hyprland](https://hypr.land/) · [Quickshell](https://quickshell.org/) · [illogical-impulse](https://github.com/end-4/dots-hyprland) · [caelestia-dots](https://github.com/caelestia-dots) · [JaKooLit](https://github.com/JaKooLit/Hyprland-Dots)
