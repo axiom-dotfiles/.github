@@ -276,22 +276,18 @@ See the [axiom README](https://github.com/axiom-dotfiles/axiom#readme) for the f
 - [ ] Onboarding and a setup wizard
 - [ ] Clipboard manager
 - [ ] More translations
-- [ ] Collaboration: CI, issue and PR templates, PR-only changes
+- [x] Collaboration: CI, issue and PR templates, changes through PRs
 
 ## 🤝 Contributing
 
-> [!NOTE]
-> Pull requests aren't open yet, and PRs on GitHub will be closed. Issues are very welcome.
-> If you want to help (much appreciated), get in touch on Matrix and we can work out how.
-
-Once contributions open:
+Contributions are welcome, and so are [issues](https://github.com/axiom-dotfiles/axiom/issues/new/choose): bug reports and feature requests each have a template.
 
 1. Fork [axiom](https://github.com/axiom-dotfiles/axiom)
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
 3. Commit your changes
-4. Push the branch and open a pull request
+4. Push the branch and open a pull request against `main`
 
-axiom's `CONTRIBUTING.md` covers its layout and conventions.
+CI checks every pull request. axiom's [`CONTRIBUTING.md`](https://github.com/axiom-dotfiles/axiom/blob/main/CONTRIBUTING.md) covers its layout and conventions.
 
 ## 🙏 Acknowledgments
 
