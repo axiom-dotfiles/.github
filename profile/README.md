@@ -172,7 +172,7 @@ Wallpapers and bars are set per monitor. Surfaces open on the primary monitor, t
 | --- | --- |
 | 🪟 **Hyprland** 0.55+ | with its Lua config (`hyprland.lua`) |
 | 🐚 **[Quickshell](https://quickshell.org)** 0.3.1+ | the `qs` binary |
-| 🔤 **A Nerd Font** | providing `Symbols Nerd Font` |
+| 🔤 **[Material Symbols](https://fonts.google.com/icons)** | the icon font (`ttf-material-symbols-variable`); any font works for text |
 | 🧰 **`jq`**, **`python3`** | nothing else |
 
 <details>
@@ -211,9 +211,9 @@ Then press <kbd>Super</kbd> + <kbd>Tab</kbd> to open the overlay, and set everyt
 <details>
 <summary><b>Updating</b></summary>
 
-There's no managed update yet. If you haven't changed the source, `git pull` in each repository is enough. Your settings live in `config/user/config.json`, which git ignores.
+axiom updates itself from its release tags. By default it notifies you when a release is out, and the notification opens **Settings → Updates**, where one click installs it. That page can also switch to updating automatically, or turn checks off. The other repositories update with `git pull`. Your settings live in `config/user/config.json`, which git ignores.
 
-If you have local changes, save them first:
+axiom won't update a clone with local changes. Update one by hand, saving the changes first:
 
 ```bash
 git commit -am "local changes"
@@ -238,7 +238,7 @@ rm -rf ~/.local/state/axiom   # generated hyprlock config and chat API keys
 
 - **Nothing shows up:** run `~/.config/quickshell/axiom/scripts/log.sh` to see the shell's warnings and errors.
 - **Settings won't save:** `config.json` is invalid. The log names the problem. Fix the file, or restore a saved config.
-- **Missing icons:** install a Nerd Font that provides `Symbols Nerd Font`.
+- **Icons show as words** (`wifi`, `battery_full`): the icon font is missing. Install `ttf-material-symbols-variable` and restart the shell.
 
 Found a bug? [Open an issue](https://github.com/axiom-dotfiles/axiom/issues).
 
