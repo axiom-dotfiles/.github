@@ -315,8 +315,3 @@ MIT. See [LICENSE](LICENSE).
 ⭐ **If axiom makes your desktop better, a star helps others find it.**
 
 </div>
-
-> [!NOTE]
-> - Interested in the keyboard? Check out my keyboard project: [travyboard](https://github.com/travishepworth/travyboard-mirror)
-> - Interested in Kubernetes? Check out [Klusteroth](https://code.batk.me/Kubernetes) and my [template-application](https://code.batk.me/Kubernetes/template-application).
-> - I don't accept donations. If you want to support the project, contribute code or spread the word!
