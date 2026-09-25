@@ -18,14 +18,14 @@ It needs only `qs`, `python3` and `jq`.
 [![Quickshell](https://img.shields.io/badge/Quickshell-0.3.1%2B-b16286?style=for-the-badge&labelColor=282828)](https://quickshell.org)
 [![License](https://img.shields.io/badge/License-MIT-689d6a?style=for-the-badge&labelColor=282828)](LICENSE)
 
-[Features](#-why-axiom) · [Quick start](#-quick-start) · [Roadmap](#%EF%B8%8F-roadmap)
+[Features](#-why-axiom) · [Gallery](#-gallery) · [Quick start](#-quick-start) · [Roadmap](#%EF%B8%8F-roadmap)
 
 </div>
 
 https://github.com/user-attachments/assets/a53f62e0-e2bc-4834-a05f-92b6cb115c35
 
 > [!TIP]
-> Everything in this video is set up from inside the shell: the settings, the bars, the overlay pages and the themes. You never have to open a text file.
+> Everything in this video was built from inside the shell: the settings, the bars, the overlay pages and the themes. No file was edited by hand, and switching between whole setups is one click.
 
 ## ✨ Why axiom
 
@@ -33,14 +33,14 @@ https://github.com/user-attachments/assets/a53f62e0-e2bc-4834-a05f-92b6cb115c35
 <tr>
 <td width="33%" valign="top">
 
-### 📦 Batteries included
-The whole desktop is in one repository with one config. There's no separate bar, launcher, notification daemon, locker and theming tool to wire together. Beyond Hyprland and Quickshell it needs only `python3` and `jq`. Every other tool is optional and only turns on the feature that uses it.
+### 🛠️ Built in the shell
+Your whole desktop is data, and the shell edits all of it. Drag widgets onto your bars and modules onto overlay pages, and watch them change live. Every option is on a Settings page generated from the config schema. You never write a config file.
 
 </td>
 <td width="33%" valign="top">
 
-### 🎛️ Configured from the desktop
-The Settings page is generated from the config schema, so every option shows up there. The bar and the overlay each have a drag-and-drop editor. Changes apply live, with no restart.
+### 📦 Batteries included
+The whole desktop is in one repository with one config. There's no separate bar, launcher, notification daemon, locker and theming tool to wire together. Beyond Hyprland and Quickshell it needs only `python3` and `jq`. Every other tool is optional and only turns on the feature that uses it.
 
 </td>
 <td width="33%" valign="top">
@@ -74,7 +74,7 @@ It builds a base16 palette from your wallpaper in OKLCH, tuned to match the cont
 <td valign="top">
 
 ### 🤝 Fits your Hyprland config
-axiom can apply itself at runtime and leave your files alone, write a file your config includes, or manage `hyprland.lua` for you. It never edits your own config files.
+axiom can apply itself at runtime and leave your files alone, write a file your config includes, or manage `hyprland.lua` for you, loading your own files after it.
 
 </td>
 <td valign="top">
@@ -94,7 +94,7 @@ Wallpapers and bars are set per monitor. Surfaces open on the primary monitor, t
 
 <div align="center">
 
-**20** bar widgets · **24** overlay modules · **5** built-in pages · **9** hand-made themes · **18** app integrations · **3** lockscreen modes
+**20** bar widgets · **24** overlay modules · **5** built-in pages · **10** hand-made themes · **18** app integrations · **3** lockscreen modes
 
 </div>
 
@@ -106,60 +106,67 @@ Wallpapers and bars are set per monitor. Surfaces open on the primary monitor, t
 - **Per-app OSD:** the volume OSD follows the apps you choose, not only the master volume.
 - **Your choice of lockscreen:** the built-in Wayland session lock (PAM), a themed hyprlock config that axiom generates, or your own locker.
 - **Keybinds page:** lists every bind Hyprland knows, and edits axiom's own binds with conflict detection and key recording.
-- **AI chat:** Gemini, OpenAI, Anthropic or an offline backend, in an overlay card.
+- **AI chat:** Anthropic, OpenAI, Gemini or any OpenAI-style API (Ollama and friends), streaming Markdown replies with thinking, saved conversations, presets and image attachments, with keys in your keyring.
 - **Scriptable:** every surface can be controlled over IPC, so anything can drive it.
 
 </details>
 
-<!-- GALLERY: fill in the screenshot URLs, uncomment this block, and add
-     "[Gallery](#-gallery) · " to the nav links above.
-
 ## 📸 Gallery
+
+Both setups were built entirely in the shell. See the [axiom README](https://github.com/axiom-dotfiles/axiom#readme) for every page and popout.
 
 <table>
 <tr>
 <td width="50%" align="center">
-<img src="URL" alt="The overlay">
-<br><sub><b>The overlay</b>: pages of cards you lay out yourself</sub>
+<img src="https://raw.githubusercontent.com/axiom-dotfiles/axiom/main/assets/screenshots/desktop.webp" alt="Pill and transparent bars">
+<br><sub><b>Pills</b>: floating pills and a transparent bar, down the sides</sub>
 </td>
 <td width="50%" align="center">
-<img src="URL" alt="Settings page">
+<img src="https://raw.githubusercontent.com/axiom-dotfiles/axiom/main/assets/screenshots/desktop-b.webp" alt="A solid top bar">
+<br><sub><b>Solid</b>: one bar across the top, same shell</sub>
+</td>
+</tr>
+<tr>
+<td align="center">
+<img src="https://raw.githubusercontent.com/axiom-dotfiles/axiom/main/assets/screenshots/overlay-home.webp" alt="The overlay">
+<br><sub><b>The overlay</b>: pages of cards you lay out yourself</sub>
+</td>
+<td align="center">
+<img src="https://raw.githubusercontent.com/axiom-dotfiles/axiom/main/assets/screenshots/overlay-editor.webp" alt="Overlay editor">
+<br><sub><b>Overlay editor</b>: drag modules onto a page</sub>
+</td>
+</tr>
+<tr>
+<td align="center">
+<img src="https://raw.githubusercontent.com/axiom-dotfiles/axiom/main/assets/screenshots/bar-editor.webp" alt="Bar editor">
+<br><sub><b>Bar editor</b>: drag widgets and watch the bar change live</sub>
+</td>
+<td align="center">
+<img src="https://raw.githubusercontent.com/axiom-dotfiles/axiom/main/assets/screenshots/settings.webp" alt="Settings page">
 <br><sub><b>Settings</b>: generated from the schema</sub>
 </td>
 </tr>
 <tr>
 <td align="center">
-<img src="URL" alt="Bar editor">
-<br><sub><b>Bar editor</b>: drag widgets and watch the bar change live</sub>
+<img src="https://raw.githubusercontent.com/axiom-dotfiles/axiom/main/assets/screenshots/themes-dark.webp" alt="Themes page, dark">
+<br><sub><b>Themes</b>: hand-made, or generated from your wallpaper</sub>
 </td>
 <td align="center">
-<img src="URL" alt="Themes page">
-<br><sub><b>Themes</b>: generated from your wallpaper, or hand-made</sub>
+<img src="https://raw.githubusercontent.com/axiom-dotfiles/axiom/main/assets/screenshots/themes-light.webp" alt="Themes page, light">
+<br><sub><b>Light mode</b>: one toggle switches the pair</sub>
 </td>
 </tr>
 <tr>
 <td align="center">
-<img src="URL" alt="Bar styles">
-<br><sub><b>Bar styles</b>: solid, transparent or pills</sub>
-</td>
-<td align="center">
-<img src="URL" alt="Launcher">
+<img src="https://raw.githubusercontent.com/axiom-dotfiles/axiom/main/assets/screenshots/launcher-apps.webp" alt="Launcher">
 <br><sub><b>Launcher</b>: apps, windows, math, web and commands</sub>
 </td>
-</tr>
-<tr>
 <td align="center">
-<img src="URL" alt="Workspace overview">
+<img src="https://raw.githubusercontent.com/axiom-dotfiles/axiom/main/assets/screenshots/workspace-overlay.webp" alt="Workspace overview">
 <br><sub><b>Workspace overview</b>: live previews, drag to move</sub>
-</td>
-<td align="center">
-<img src="URL" alt="Notifications">
-<br><sub><b>Notifications</b>: toasts and history</sub>
 </td>
 </tr>
 </table>
-
--->
 
 ## 🚀 Quick start
 
@@ -172,7 +179,7 @@ The installer below sets these up for you on Arch.
 
 | | |
 | --- | --- |
-| 🪟 **Hyprland** 0.55+ | with its Lua config (`hyprland.lua`) |
+| 🪟 **[Hyprland](https://hypr.land)** 0.55+ | with its Lua config (`hyprland.lua`) |
 | 🐚 **[Quickshell](https://quickshell.org)** 0.3.1+ | the `qs` binary |
 | 🔤 **[Material Symbols](https://fonts.google.com/icons)** | the icon font (`ttf-material-symbols-variable`); any font works for text |
 | 🧰 **`jq`**, **`python3`** | nothing else |
@@ -186,6 +193,7 @@ The installer below sets these up for you on Arch.
 - `pacman-contrib`, plus `paru` or `yay`: update checks
 - `tailscale`: Tailscale widget
 - `grim`, `slurp`, `wl-copy`: screenshots
+- `curl`, and `secret-tool` (libsecret) for keys in your keyring: AI chat
 - `qalc`: launcher calculator
 - `hyprlock` and `hypridle`: hyprlock mode and locking when idle
 - The apps you want themed, plus `qt5ct`/`qt6ct` and `adw-gtk-theme`: theme integrations
@@ -239,7 +247,7 @@ git pull --rebase origin main
 
 ```bash
 rm -rf ~/.config/quickshell/axiom
-rm -rf ~/.local/state/axiom   # generated hyprlock config and chat API keys
+rm -rf ~/.local/state/axiom   # generated hyprlock config, chat keys and conversations
 ```
 
 Then remove the `qs -c axiom` line (marked `-- axiom`) from your `hyprland.lua`. If you'd switched axiom to managing `hyprland.lua`, your original is in `~/.config/hypr/user/00-previous.lua`.
@@ -267,6 +275,7 @@ See the [axiom README](https://github.com/axiom-dotfiles/axiom#readme) for the f
 - [x] v1.0, the first stable release
 - [ ] Onboarding and a setup wizard
 - [ ] Clipboard manager
+- [ ] More translations
 - [ ] Collaboration: CI, issue and PR templates, PR-only changes
 
 ## 🤝 Contributing
@@ -292,6 +301,8 @@ axiom's `CONTRIBUTING.md` covers its layout and conventions.
 ## 🙏 Acknowledgments
 
 [Hyprland](https://hypr.land/) · [Quickshell](https://quickshell.org/) · [illogical-impulse](https://github.com/end-4/dots-hyprland) · [caelestia-dots](https://github.com/caelestia-dots) · [JaKooLit](https://github.com/JaKooLit/Hyprland-Dots)
+
+The full list, with the fonts, tools and themes axiom builds on, is in the [axiom README](https://github.com/axiom-dotfiles/axiom#-acknowledgments).
 
 ## 📄 License
 
